@@ -1,0 +1,4704 @@
+{
+  "id": 4710,
+  "states": [
+    "External(0) >= 1 then terminate"
+  ],
+  "root": {
+    "type": 2000,
+    "termination": { "type": 700 },
+    "unk10100": { "type": 10100 },
+    "unk10400": { "type": 10400 },
+    "unk10500": {
+      "type": 10500,
+      "rateOfTime": 1,
+      "limitViewDistance": false,
+      "maxViewDistance": 0,
+      "initialSimulationTime": 0
+    },
+    "nodes": [
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": {
+              "type": 35,
+              "offset": [ 0, 0.125, 0 ],
+              "rotation": [ 0, 0, 0 ]
+            },
+            "nodeMovement": {
+              "type": 1,
+              "speedZ": 0,
+              "accelerationZ": 0,
+              "accelerationMultiplierZ": 1,
+              "accelerationY": 0,
+              "unkAlignWithMotion": 0
+            },
+            "nodeAudio": null,
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ],
+        "nodes": [
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -30
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.033333,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 403,
+                  "radius": 0.375,
+                  "emitInside": true
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 5.625,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 0.125,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1782317737,
+                        "max": 0.2
+                      }
+                    ]
+                  },
+                  "scaleX": {
+                    "value": 0.065625,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1569564747,
+                        "max": 0.428571
+                      }
+                    ]
+                  },
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 0.749019, 1, 0.956862, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": {
+                    "value": 0.6,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -1338499543,
+                        "min": 0,
+                        "max": 0.166666
+                      }
+                    ]
+                  },
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 600,
+                  "texture": 10020,
+                  "blendMode": 4,
+                  "size": {
+                    "function": "Hermite",
+                    "loop": true,
+                    "keyframes": [
+                      { "position": 0,   "value": 0.05, "t1": 0,        "t2": 0.785398 },
+                      { "position": 0.2, "value": 0.1,  "t1": 0.785398, "t2": 0        },
+                      { "position": 0.4, "value": 0.05, "t1": 0,        "t2": 0        }
+                    ]
+                  },
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 0.408333, 0.813235, 0.744607, 1 ] },
+                      { "position": 0.4, "value": [ 0.408333, 0.813235, 0.744607, 1 ] },
+                      { "position": 0.6, "value": [ 0.408333, 0.813235, 0.744607, 0 ] }
+                    ]
+                  },
+                  "color2": {
+                    "value": [ 1.141176, 1.141176, 1.141176, 1 ],
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": [ -1074334704, 894795789, 95074029, 1964189991 ],
+                        "min": [ -0.28627, -0.28627, -0.28627, 0 ],
+                        "max": [ 0, 0, 0, 0 ]
+                      }
+                    ]
+                  },
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 75, 75, 75, 75 ] },
+                      { "position": 0.4, "value": [ 75, 75, 75, 75 ] },
+                      { "position": 0.6, "value": [  0,  0,  0,  0 ] }
+                    ]
+                  },
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "alphaThreshold": 0,
+                  "unk_ds3_f1_2": -1,
+                  "unk_ds3_f1_3": -1,
+                  "unk_er_f1_4": 0,
+                  "bloom": true,
+                  "bloomColor": [ 0.5, 0.75, 1, 0.5 ],
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "unk_ds3_f2_27": 1,
+                  "unk_sdt_f2_30": 1,
+                  "unk_sdt_f2_32": true,
+                  "unk_sdt_f2_34": 0.5
+                },
+                "particleMovement": {
+                  "type": 105,
+                  "gravity": {
+                    "value": -0.5625,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 2102199777,
+                        "max": 0.333333
+                      }
+                    ]
+                  },
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1,
+                  "maxTurnAngle": 22.5,
+                  "followFactor": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1 },
+                      { "position": 0.6, "value": 0 }
+                    ]
+                  },
+                  "turnInterval": 0.12,
+                  "followRotation": false
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.3,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 404,
+                  "sizeX": 0.05,
+                  "sizeY": 0.05,
+                  "sizeZ": 0.05,
+                  "direction": 1,
+                  "emitInside": true
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 0.5,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 0.749019, 1, 0.956862, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 1.5,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 604,
+                  "blendMode": 0,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "width": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1 },
+                      { "position": 1.5, "value": 2 }
+                    ]
+                  },
+                  "height": 1,
+                  "rotationX": 0,
+                  "rotationY": 0,
+                  "rotationZ": {
+                    "value": 360,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -461260883,
+                        "min": -360,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "angularSpeedX": 0,
+                  "angularSpeedMultiplierX": 1,
+                  "angularSpeedY": 0,
+                  "angularSpeedMultiplierY": 1,
+                  "angularSpeedZ": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 11.25 },
+                      { "position": 1.5, "value":  0    }
+                    ]
+                  },
+                  "angularSpeedMultiplierZ": {
+                    "value": -1,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -1261672434,
+                        "min": 0,
+                        "max": 2
+                      }
+                    ]
+                  },
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 0.466666, 0.929411, 0.85098, 0 ] },
+                      { "position": 0.5, "value": [ 0.466666, 0.929411, 0.85098, 1 ] },
+                      { "position": 1.5, "value": [ 0.466666, 0.929411, 0.85098, 0 ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.5, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 1.5, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "layer1Color": [ 1, 1, 1, 1 ],
+                  "layer2Color": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      {
+                        "position": 0,
+                        "value": [ 1, 1, 1, 0.941176 ],
+                        "t1": [ 0.785398, 0.785398, 0.785398, 0.785398 ],
+                        "t2": [ 0, 0, 0, 0 ]
+                      },
+                      { "position": 1.5, "value": [ 1, 1, 1, 1 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                    ]
+                  },
+                  "layer3Color": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      {
+                        "position": 0,
+                        "value": [ 1, 1, 1, 0.627451 ],
+                        "t1": [ 0.785398, 0.785398, 0.785398, 0.785398 ],
+                        "t2": [ 0, 0, 0, 0 ]
+                      },
+                      { "position": 1.5, "value": [ 1, 1, 1, 0.752941 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                    ]
+                  },
+                  "alphaFadeThreshold": 0,
+                  "frameIndex": 0,
+                  "frameIndexOffset": 0,
+                  "layer1SpeedU": 0,
+                  "layer1SpeedV": 0,
+                  "layer1OffsetU": 0,
+                  "layer1OffsetV": 0,
+                  "layer1ScaleU": 1,
+                  "layer1ScaleV": 1,
+                  "layer2SpeedU": 0.1,
+                  "layer2SpeedV": 0.2,
+                  "layer2OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1484404129,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1292718402,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2ScaleU": 1,
+                  "layer2ScaleV": 1,
+                  "layer3SpeedU": -0.1,
+                  "layer3SpeedV": 0.1,
+                  "layer3OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1529300079,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer3OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1937980188,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer3ScaleU": 0.5,
+                  "layer3ScaleV": 0.5,
+                  "rgbMultiplier": 5,
+                  "alphaMultiplier": 2.5,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "layer1": 10041,
+                  "layer2": 34020,
+                  "layer3": 34060,
+                  "uniformScale": true,
+                  "scaleBeforeRotation": false,
+                  "columns": 1,
+                  "totalFrames": 1,
+                  "interpolateFrames": true,
+                  "unk_ds3_f1_11": -1,
+                  "depthBlend": true,
+                  "octagonal": true,
+                  "bloom": true,
+                  "bloomColor": [ 0.5, 0.75, 1, 1 ],
+                  "unk_ds3_f2_10": 2,
+                  "minFadeDistance": 1,
+                  "minDistance": 0.5,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": 0.25,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 0.5,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "unk_ds3_f2_29": 3,
+                  "shadowDarkness": 1,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -1,
+                  "unk_sdt_f2_39": 0
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": { "type": 399 },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": { "type": 500 },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": -0.03333,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 609,
+                  "diffuseColor": [ 0.313725, 0.85098, 0.85098, 1 ],
+                  "specularColor": [ 0.313725, 0.85098, 0.85098, 1 ],
+                  "radius": 1.5,
+                  "unk_ds3_p1_4": 1,
+                  "unk_ds3_p1_5": 1,
+                  "unk_ds3_p1_6": 1,
+                  "unk_ds3_p2_0": 0.375,
+                  "diffuseMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0   },
+                      { "position": 0.2, "value": 3.2 }
+                    ]
+                  },
+                  "specularMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0   },
+                      { "position": 0.2, "value": 3.2 }
+                    ]
+                  },
+                  "unk_ds3_f1_0": 1,
+                  "unk_ds3_f1_1": 0.1,
+                  "jitterAndFlicker": true,
+                  "jitterAcceleration": 1,
+                  "unk_ds3_f2_3": 0.05,
+                  "jitterX": 0,
+                  "jitterY": 0,
+                  "jitterZ": 0,
+                  "flickerIntervalMin": 0.25,
+                  "flickerIntervalMax": 0.5,
+                  "flickerBrightness": 0.75,
+                  "shadows": false,
+                  "separateSpecular": true,
+                  "fadeOutTime": 0.2,
+                  "shadowDarkness": 0.8,
+                  "maxViewDistance": 20,
+                  "volumeDensity": 0.5,
+                  "phaseFunction": false,
+                  "asymmetryParam": 0.2,
+                  "adaptationExponent": 1
+                },
+                "particleMovement": null,
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -10
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.5,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 404,
+                  "sizeX": 0.05,
+                  "sizeY": 0.05,
+                  "sizeZ": 0.05,
+                  "direction": 1,
+                  "emitInside": true
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 0.5,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 1.5,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 607,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "sizeX": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                      { "position": 1.5, "value": 2, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "sizeY": 1,
+                  "sizeZ": 1,
+                  "color": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.5, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 1.5, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "intensity": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 5   },
+                      { "position": 1.5, "value": 2.5 }
+                    ]
+                  },
+                  "unk_ds3_p1_9": 1,
+                  "stirSpeed": 57.29577951308232,
+                  "radius": 1,
+                  "normalMapOffsetU": 0,
+                  "normalMapOffsetV": 0,
+                  "normalMapSpeedU": 0,
+                  "normalMapSpeedV": 0,
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "alphaThreshold": 0,
+                  "normalMapScaleU": 1,
+                  "normalMapScaleV": 1,
+                  "mode": 1,
+                  "shape": 1,
+                  "orientation": 1,
+                  "texture": 0,
+                  "normalMap": 60022,
+                  "mask": 0,
+                  "scaleVariationX": 1,
+                  "scaleVariationY": 1,
+                  "scaleVariationZ": 1,
+                  "uniformScale": true,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": 4,
+                  "minDistance": 2,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": 1.5,
+                  "maxDistanceThreshold": -1,
+                  "unk_ds3_f2_20": 0,
+                  "unk_ds3_f2_21": 1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "unk_sdt_f2_30": 1,
+                  "unk_sdt_f2_34": 0.5,
+                  "unk_sdt_f2_35": -2,
+                  "unk_sdt_f2_38": 100
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": null,
+            "nodeMovement": null,
+            "nodeAudio": {
+              "type": 75,
+              "sound": 4710,
+              "unk_ds3_f1_2": true
+            },
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+{
+  "id": 4720,
+  "states": [
+    "External(0) >= 1 then terminate"
+  ],
+  "root": {
+    "type": 2000,
+    "termination": { "type": 700 },
+    "unk10100": { "type": 10100 },
+    "unk10400": { "type": 10400 },
+    "unk10500": {
+      "type": 10500,
+      "rateOfTime": 1,
+      "limitViewDistance": false,
+      "maxViewDistance": 0,
+      "initialSimulationTime": 0
+    },
+    "nodes": [
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": {
+              "type": 35,
+              "offset": [ 0, 0.125, 0 ],
+              "rotation": [ 0, 0, 0 ]
+            },
+            "nodeMovement": {
+              "type": 1,
+              "speedZ": 0,
+              "accelerationZ": 0,
+              "accelerationMultiplierZ": 1,
+              "accelerationY": 0,
+              "unkAlignWithMotion": 0
+            },
+            "nodeAudio": null,
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ],
+        "nodes": [
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.3,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 404,
+                  "sizeX": 0.05,
+                  "sizeY": 0.05,
+                  "sizeZ": 0.05,
+                  "direction": 1,
+                  "emitInside": true
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 0.5,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 0.749019, 0.749019, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 1.5,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 604,
+                  "blendMode": 0,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "width": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1 },
+                      { "position": 1.5, "value": 2 }
+                    ]
+                  },
+                  "height": 1,
+                  "rotationX": 0,
+                  "rotationY": 0,
+                  "rotationZ": {
+                    "value": 360,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 1908224427,
+                        "min": -360,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "angularSpeedX": 0,
+                  "angularSpeedMultiplierX": 1,
+                  "angularSpeedY": 0,
+                  "angularSpeedMultiplierY": 1,
+                  "angularSpeedZ": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 11.25 },
+                      { "position": 1.5, "value":  0    }
+                    ]
+                  },
+                  "angularSpeedMultiplierZ": {
+                    "value": -1,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -1788931120,
+                        "min": 0,
+                        "max": 2
+                      }
+                    ]
+                  },
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 0.631372, 0.368627, 0 ] },
+                      { "position": 0.5, "value": [ 1, 0.588235, 0.329411, 1 ] },
+                      { "position": 1.5, "value": [ 1, 0.50196,  0.25098,  0 ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.5, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 1.5, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "layer1Color": [ 1, 1, 1, 1 ],
+                  "layer2Color": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      {
+                        "position": 0,
+                        "value": [ 1, 1, 1, 0.941176 ],
+                        "t1": [ 0.785398, 0.785398, 0.785398, 0.785398 ],
+                        "t2": [ 0, 0, 0, 0 ]
+                      },
+                      { "position": 1.5, "value": [ 1, 1, 1, 1 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                    ]
+                  },
+                  "layer3Color": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      {
+                        "position": 0,
+                        "value": [ 1, 1, 1, 0.627451 ],
+                        "t1": [ 0.785398, 0.785398, 0.785398, 0.785398 ],
+                        "t2": [ 0, 0, 0, 0 ]
+                      },
+                      { "position": 1.5, "value": [ 1, 1, 1, 0.752941 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                    ]
+                  },
+                  "alphaFadeThreshold": 0,
+                  "frameIndex": 0,
+                  "frameIndexOffset": 0,
+                  "layer1SpeedU": 0,
+                  "layer1SpeedV": 0,
+                  "layer1OffsetU": 0,
+                  "layer1OffsetV": 0,
+                  "layer1ScaleU": 1,
+                  "layer1ScaleV": 1,
+                  "layer2SpeedU": 0.1,
+                  "layer2SpeedV": 0.2,
+                  "layer2OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1398019878,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 701726326,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2ScaleU": 1,
+                  "layer2ScaleV": 1,
+                  "layer3SpeedU": -0.1,
+                  "layer3SpeedV": 0.1,
+                  "layer3OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1317330290,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer3OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -589863198,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer3ScaleU": 0.5,
+                  "layer3ScaleV": 0.5,
+                  "rgbMultiplier": 5,
+                  "alphaMultiplier": 2.5,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "layer1": 10041,
+                  "layer2": 34020,
+                  "layer3": 34060,
+                  "uniformScale": true,
+                  "scaleBeforeRotation": false,
+                  "columns": 1,
+                  "totalFrames": 1,
+                  "interpolateFrames": true,
+                  "unk_ds3_f1_11": -1,
+                  "depthBlend": true,
+                  "octagonal": true,
+                  "bloom": true,
+                  "bloomColor": [ 1, 0.25, 0.25, 0.5 ],
+                  "unk_ds3_f2_10": 2,
+                  "minFadeDistance": 1,
+                  "minDistance": 0.5,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": 0.25,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 0.5,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "unk_ds3_f2_29": 3,
+                  "shadowDarkness": 1,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -1,
+                  "unk_sdt_f2_39": 0
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": { "type": 399 },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": { "type": 500 },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": -0.03333,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 609,
+                  "diffuseColor": [ 1, 0.631372, 0.368627, 1 ],
+                  "specularColor": [ 1, 0.631372, 0.368627, 1 ],
+                  "radius": 1.5,
+                  "unk_ds3_p1_4": 1,
+                  "unk_ds3_p1_5": 1,
+                  "unk_ds3_p1_6": 1,
+                  "unk_ds3_p2_0": 0.375,
+                  "diffuseMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0   },
+                      { "position": 0.2, "value": 3.2 }
+                    ]
+                  },
+                  "specularMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0   },
+                      { "position": 0.2, "value": 3.2 }
+                    ]
+                  },
+                  "unk_ds3_f1_0": 1,
+                  "unk_ds3_f1_1": 0.1,
+                  "jitterAndFlicker": true,
+                  "jitterAcceleration": 1,
+                  "unk_ds3_f2_3": 0.05,
+                  "jitterX": 0,
+                  "jitterY": 0,
+                  "jitterZ": 0,
+                  "flickerIntervalMin": 0.25,
+                  "flickerIntervalMax": 0.5,
+                  "flickerBrightness": 0.75,
+                  "shadows": false,
+                  "separateSpecular": true,
+                  "fadeOutTime": 0.2,
+                  "shadowDarkness": 0.8,
+                  "maxViewDistance": 20,
+                  "volumeDensity": 0.5,
+                  "phaseFunction": false,
+                  "asymmetryParam": 0.2,
+                  "adaptationExponent": 1
+                },
+                "particleMovement": null,
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -10
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.5,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 404,
+                  "sizeX": 0.05,
+                  "sizeY": 0.05,
+                  "sizeZ": 0.05,
+                  "direction": 1,
+                  "emitInside": true
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 0.5,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 1.5,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 607,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "sizeX": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                      { "position": 1.5, "value": 2, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "sizeY": 1,
+                  "sizeZ": 1,
+                  "color": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.5, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 1.5, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "intensity": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 5   },
+                      { "position": 1.5, "value": 2.5 }
+                    ]
+                  },
+                  "unk_ds3_p1_9": 1,
+                  "stirSpeed": 57.29577951308232,
+                  "radius": 1,
+                  "normalMapOffsetU": 0,
+                  "normalMapOffsetV": 0,
+                  "normalMapSpeedU": 0,
+                  "normalMapSpeedV": 0,
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "alphaThreshold": 0,
+                  "normalMapScaleU": 1,
+                  "normalMapScaleV": 1,
+                  "mode": 1,
+                  "shape": 1,
+                  "orientation": 1,
+                  "texture": 0,
+                  "normalMap": 60022,
+                  "mask": 0,
+                  "scaleVariationX": 1,
+                  "scaleVariationY": 1,
+                  "scaleVariationZ": 1,
+                  "uniformScale": true,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": 4,
+                  "minDistance": 2,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": 1.5,
+                  "maxDistanceThreshold": -1,
+                  "unk_ds3_f2_20": 0,
+                  "unk_ds3_f2_21": 1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "unk_sdt_f2_30": 1,
+                  "unk_sdt_f2_34": 0.5,
+                  "unk_sdt_f2_35": -2,
+                  "unk_sdt_f2_38": 100
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": -100
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.033333,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 403,
+                  "radius": 0.375,
+                  "emitInside": true
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 5.625,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 0.125,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 801745050,
+                        "max": 0.2
+                      }
+                    ]
+                  },
+                  "scaleX": {
+                    "value": 0.2625,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1654963237,
+                        "max": 0.428571
+                      }
+                    ]
+                  },
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 0.749019, 0.749019, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": {
+                    "value": 0.6,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -178491988,
+                        "min": 0,
+                        "max": 0.6
+                      }
+                    ]
+                  },
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 602,
+                  "blendMode": 4,
+                  "width": 0.01,
+                  "length": 0.075,
+                  "color1": [ 1, 0.207843, 0.05098, 1 ],
+                  "color2": [ 50, 31.25, 37.5, 12.5 ],
+                  "startColor": [ 1, 1, 1, 1 ],
+                  "endColor": [ 0, 0, 0, 0 ],
+                  "widthMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0.5 },
+                      { "position": 0.1, "value": 1   },
+                      { "position": 0.2, "value": 1   },
+                      { "position": 0.6, "value": 0   }
+                    ]
+                  },
+                  "lengthMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0.5 },
+                      { "position": 0.1, "value": 1   },
+                      { "position": 0.2, "value": 1   },
+                      { "position": 0.6, "value": 0.5 }
+                    ]
+                  },
+                  "color3": [ 1, 0.207843, 0.05098, 1 ],
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "alphaThreshold": 0,
+                  "bloom": true,
+                  "bloomColor": [ 1, 0.25, 0.25, 0.1 ],
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "unk_ds3_f2_27": 1,
+                  "unk_sdt_f2_32": true,
+                  "unk_sdt_f2_34": 0.5
+                },
+                "particleMovement": {
+                  "type": 105,
+                  "gravity": {
+                    "value": -0.5625,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1831082605,
+                        "max": 0.333333
+                      }
+                    ]
+                  },
+                  "acceleration": 1,
+                  "accelerationMultiplier": 1,
+                  "maxTurnAngle": 45,
+                  "followFactor": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1 },
+                      { "position": 0.6, "value": 0 }
+                    ]
+                  },
+                  "turnInterval": 0.12,
+                  "followRotation": false
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": null,
+            "nodeMovement": null,
+            "nodeAudio": {
+              "type": 75,
+              "sound": 4720,
+              "unk_ds3_f1_2": true
+            },
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+{
+  "id": 525572,
+  "states": [
+    "External(0) >= 1 then terminate"
+  ],
+  "root": {
+    "type": 2000,
+    "termination": { "type": 702 },
+    "unk10100": { "type": 10100 },
+    "unk10400": { "type": 10400 },
+    "unk10500": {
+      "type": 10500,
+      "rateOfTime": 1,
+      "limitViewDistance": false,
+      "maxViewDistance": 0,
+      "initialSimulationTime": 0
+    },
+    "nodes": [
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": 10,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": {
+              "type": 35,
+              "offset": [ 0, 0, 0 ],
+              "rotation": [ 0, 0, 0 ]
+            },
+            "nodeMovement": null,
+            "nodeAudio": null,
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": 10,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ],
+        "nodes": [
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": { "type": 399 },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": { "type": 500 },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": -0.03333,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 609,
+                  "diffuseColor": [ 1, 0.905882, 0.619607, 1 ],
+                  "specularColor": [ 1, 0.905882, 0.619607, 1 ],
+                  "radius": 2,
+                  "unk_ds3_p1_3": 1,
+                  "unk_ds3_p1_4": 1,
+                  "unk_ds3_p1_5": 1,
+                  "unk_ds3_p1_6": 1,
+                  "diffuseMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value":  0   },
+                      { "position": 0.2, "value": 12.8 }
+                    ]
+                  },
+                  "specularMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value":  0   },
+                      { "position": 0.2, "value": 12.8 }
+                    ]
+                  },
+                  "unk_ds3_f1_0": 1,
+                  "jitterAndFlicker": true,
+                  "jitterAcceleration": 1,
+                  "unk_ds3_f2_3": 0.05,
+                  "jitterX": 0,
+                  "jitterY": 0,
+                  "jitterZ": 0,
+                  "flickerIntervalMin": 0.125,
+                  "flickerIntervalMax": 0.25,
+                  "flickerBrightness": 0.125,
+                  "shadows": false,
+                  "separateSpecular": false,
+                  "fadeOutTime": 0.2,
+                  "shadowDarkness": 0.8,
+                  "maxViewDistance": 20,
+                  "volumeDensity": 0.5,
+                  "phaseFunction": false,
+                  "asymmetryParam": 0.2,
+                  "adaptationExponent": 1
+                },
+                "particleMovement": null,
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": -50
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, -0.5, 0 ],
+                  "rotation": [ -90, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.066666,
+                  "perEmission": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 4 },
+                      { "position": 0.1, "value": 2 }
+                    ]
+                  },
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 401,
+                  "radius": 0.5,
+                  "distribution": -0.25,
+                  "direction": 1
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 13.125,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1825663376,
+                        "max": 0.428571
+                      }
+                    ]
+                  },
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.3,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 606,
+                  "texture": 33025,
+                  "blendMode": 7,
+                  "width": 0.11875,
+                  "widthMultiplier": {
+                    "value": 0.421052,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 1950766745,
+                        "min": 0,
+                        "max": 1.157895
+                      }
+                    ]
+                  },
+                  "startFadeEndpoint": 25,
+                  "endFadeEndpoint": 75,
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 0.905882, 0.619607, 1 ] },
+                      { "position": 0.2, "value": [ 1, 0.905882, 0.619607, 1 ] },
+                      { "position": 0.3, "value": [ 1, 0.560784, 0.25098,  1 ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": [ 1, 1, 1, 1 ],
+                  "alphaFadeThreshold": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 255 },
+                      { "position": 0.1, "value": 128 },
+                      { "position": 0.3, "value": 255 }
+                    ]
+                  },
+                  "frameIndex": {
+                    "value": 0,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -1815412804,
+                        "min": 0,
+                        "max": 15
+                      }
+                    ]
+                  },
+                  "frameIndexOffset": {
+                    "function": "Linear",
+                    "loop": true,
+                    "keyframes": [
+                      { "position": 0,   "value": 0 },
+                      { "position": 0.3, "value": 4 }
+                    ]
+                  },
+                  "textureFraction": 0.75,
+                  "speedU": 0,
+                  "varianceV": 0,
+                  "rgbMultiplier": 50,
+                  "alphaMultiplier": 25,
+                  "distortionIntensity": 0,
+                  "alphaThreshold": 0,
+                  "orientation": 0,
+                  "normalMap": 0,
+                  "segmentInterval": 0,
+                  "segmentDuration": 2,
+                  "concurrentSegments": 60,
+                  "segmentSubdivision": 0,
+                  "fadeOutTime": 0,
+                  "columns": 1,
+                  "totalFrames": 16,
+                  "attachedUV": false,
+                  "bloom": true,
+                  "bloomColor": [ 1, 0.875, 0.625, 0.5 ],
+                  "minFadeDistance": 6,
+                  "minDistance": 4,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": 3,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": true,
+                  "shadowDarkness": 1,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -1,
+                  "specularity": 0
+                },
+                "particleMovement": {
+                  "type": 84,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1,
+                  "maxTurnAngle": 22.5,
+                  "turnInterval": 0.06
+                },
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -50
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 1, 0 ],
+                  "rotation": [ -90, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.033333,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 405,
+                  "radius": 0.5,
+                  "height": 3.75,
+                  "direction": 1,
+                  "emitInside": true,
+                  "yAxis": false
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 0.28125,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 737636920,
+                        "max": 0.333333
+                      }
+                    ]
+                  },
+                  "scaleX": {
+                    "value": 0.39375,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -863110112,
+                        "max": 0.428571
+                      }
+                    ]
+                  },
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.3,
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 604,
+                  "blendMode": 7,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "width": 0.75,
+                  "height": 20,
+                  "rotationX": 0,
+                  "rotationY": 0,
+                  "rotationZ": 0,
+                  "angularSpeedX": 0,
+                  "angularSpeedMultiplierX": 1,
+                  "angularSpeedY": 0,
+                  "angularSpeedMultiplierY": 1,
+                  "angularSpeedZ": 0,
+                  "angularSpeedMultiplierZ": 1,
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 0.560784, 0.25098, 0.50196 ] },
+                      { "position": 0.1, "value": [ 1, 0.560784, 0.25098, 1       ] },
+                      { "position": 0.2, "value": [ 1, 0.560784, 0.25098, 1       ] },
+                      { "position": 0.3, "value": [ 1, 0.560784, 0.25098, 0       ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": true,
+                    "keyframes": [
+                      { "position": 0,     "value": [ 1,    1,    1,    1    ] },
+                      { "position": 0.067, "value": [ 0.25, 0.25, 0.25, 0.25 ] },
+                      { "position": 0.133, "value": [ 1,    1,    1,    1    ] }
+                    ]
+                  },
+                  "layer1Color": [ 1, 1, 1, 1 ],
+                  "layer2Color": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      {
+                        "position": 0,
+                        "value": [ 1, 1, 1, 1 ],
+                        "t1": [ 1.570796, 1.570796, 1.570796, 1.570796 ],
+                        "t2": [ 0, 0, 0, 0 ]
+                      },
+                      { "position": 0.3, "value": [ 1, 1, 1, 1 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                    ]
+                  },
+                  "layer3Color": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      {
+                        "position": 0,
+                        "value": [ 1, 1, 1, 1 ],
+                        "t1": [ 1.570796, 1.570796, 1.570796, 1.570796 ],
+                        "t2": [ 0, 0, 0, 0 ]
+                      },
+                      { "position": 0.3, "value": [ 1, 1, 1, 1 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                    ]
+                  },
+                  "alphaFadeThreshold": 0,
+                  "frameIndex": 0,
+                  "frameIndexOffset": 0,
+                  "layer1SpeedU": 0,
+                  "layer1SpeedV": 0,
+                  "layer1OffsetU": 0,
+                  "layer1OffsetV": 0,
+                  "layer1ScaleU": 1,
+                  "layer1ScaleV": 1,
+                  "layer2SpeedU": 0.4,
+                  "layer2SpeedV": 0.4,
+                  "layer2OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1975940682,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1321906258,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2ScaleU": 0.25,
+                  "layer2ScaleV": 0.5,
+                  "layer3SpeedU": -0.4,
+                  "layer3SpeedV": 0.2,
+                  "layer3OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -566465279,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer3OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 2113136154,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer3ScaleU": 0.5,
+                  "layer3ScaleV": 1,
+                  "rgbMultiplier": 50,
+                  "alphaMultiplier": 25,
+                  "alphaThreshold": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value":  0 },
+                      { "position": 0.3, "value": 32 }
+                    ]
+                  },
+                  "orientation": 4,
+                  "layer1": 10011,
+                  "layer2": 34010,
+                  "layer3": 34010,
+                  "uniformScale": false,
+                  "scaleBeforeRotation": true,
+                  "columns": 1,
+                  "totalFrames": 1,
+                  "interpolateFrames": true,
+                  "unk_ds3_f1_11": -1,
+                  "depthBlend": true,
+                  "octagonal": true,
+                  "bloom": true,
+                  "bloomColor": [ 1, 0.875, 0.625, 0.1 ],
+                  "unk_ds3_f2_10": 2,
+                  "minFadeDistance": 6,
+                  "minDistance": 4,
+                  "maxFadeDistance": 15,
+                  "maxDistance": 30,
+                  "minDistanceThreshold": 3,
+                  "maxDistanceThreshold": 30,
+                  "unkDepthBlend1": 0.25,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": true,
+                  "unk_ds3_f2_29": 2.5,
+                  "shadowDarkness": 1,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -1,
+                  "unk_sdt_f2_39": 0
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -150
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 1, 0 ],
+                  "rotation": [ -90, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.066666,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 405,
+                  "radius": 0.5,
+                  "height": 3.75,
+                  "direction": 1,
+                  "emitInside": true,
+                  "yAxis": false
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 0.5625,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1002546219,
+                        "max": 0.333333
+                      }
+                    ]
+                  },
+                  "scaleX": {
+                    "value": 0.28125,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 546491169,
+                        "max": 0.2
+                      }
+                    ]
+                  },
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.2,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 607,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "sizeX": 1,
+                  "sizeY": 10,
+                  "sizeZ": 1,
+                  "color": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,     "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.067, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.133, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.2,   "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "intensity": 1.5,
+                  "unk_ds3_p1_9": 1,
+                  "stirSpeed": 57.29577951308232,
+                  "radius": 1,
+                  "normalMapOffsetU": {
+                    "value": 1,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 503053911,
+                        "min": -1,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "normalMapOffsetV": {
+                    "value": 1,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -2488124,
+                        "min": -1,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "normalMapSpeedU": 0,
+                  "normalMapSpeedV": 0.1,
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "alphaThreshold": 0,
+                  "normalMapScaleU": 0.5,
+                  "normalMapScaleV": 0.5,
+                  "mode": 1,
+                  "shape": 0,
+                  "orientation": 11,
+                  "texture": 0,
+                  "normalMap": 64002,
+                  "mask": 0,
+                  "scaleVariationX": 1,
+                  "scaleVariationY": 1,
+                  "scaleVariationZ": 1,
+                  "uniformScale": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": 6,
+                  "minDistance": 4,
+                  "maxFadeDistance": 15,
+                  "maxDistance": 30,
+                  "minDistanceThreshold": 3,
+                  "maxDistanceThreshold": 30,
+                  "unk_ds3_f2_20": 30,
+                  "unkDepthBlend1": 0.5,
+                  "unkDepthBlend2": 0,
+                  "unk_sdt_f2_30": 1,
+                  "unk_sdt_f2_34": 0.5,
+                  "unk_sdt_f2_35": -2,
+                  "unk_sdt_f2_38": 100
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": 3,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": null,
+            "nodeMovement": null,
+            "nodeAudio": {
+              "type": 75,
+              "sound": 525572,
+              "unk_ds3_f1_2": true
+            },
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": 3,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+{
+  "id": 600031,
+  "states": [
+    "External(0) >= 1 then terminate"
+  ],
+  "root": {
+    "type": 2000,
+    "termination": { "type": 700 },
+    "unk10100": { "type": 10100 },
+    "unk10400": { "type": 10400 },
+    "unk10500": {
+      "type": 10500,
+      "rateOfTime": 1,
+      "limitViewDistance": false,
+      "maxViewDistance": 0,
+      "initialSimulationTime": 0
+    },
+    "nodes": [
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": {
+              "type": 35,
+              "offset": [ 0, 0, 0 ],
+              "rotation": [ 0, 0, 0 ]
+            },
+            "nodeMovement": {
+              "type": 1,
+              "speedZ": 0,
+              "accelerationZ": 0,
+              "accelerationMultiplierZ": 1,
+              "accelerationY": 0,
+              "unkAlignWithMotion": 0
+            },
+            "nodeAudio": null,
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ],
+        "nodes": [
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": -10
+                },
+                "nodeTransform": null,
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": { "type": 399 },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": { "type": 500 },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": -0.03333,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 10012,
+                  "texture": 26041,
+                  "blendMode": 0,
+                  "width": 1,
+                  "widthMultiplier": 1,
+                  "startFadeEndpoint": 90,
+                  "endFadeEndpoint": 10,
+                  "color1": [ 0.50196, 0.50196, 0.50196, 1 ],
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": [ 1, 1, 1, 1 ],
+                  "alphaFadeThreshold": 0,
+                  "frameIndex": 0,
+                  "frameIndexOffset": 0,
+                  "textureFraction": 0.01,
+                  "speedU": 0,
+                  "varianceV": 0,
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 0.5,
+                  "distortionIntensity": 0,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "normalMap": 0,
+                  "segmentInterval": 0.033333,
+                  "segmentDuration": 0.3,
+                  "concurrentSegments": 9,
+                  "segmentSubdivision": 5,
+                  "fadeOutTime": 0.2,
+                  "columns": 1,
+                  "totalFrames": 1,
+                  "attachedUV": false,
+                  "dynamicOpacity": false,
+                  "unk_sdt_f1_16": 0,
+                  "varianceU": 1,
+                  "bloom": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "shadowDarkness": 0,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -1,
+                  "specularity": 0
+                },
+                "particleMovement": null,
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ],
+            "nodes": [
+              {
+                "type": 2200,
+                "stateConfigMap": [ 0 ],
+                "configs": [
+                  {
+                    "type": 1004,
+                    "nodeAttributes": {
+                      "type": 128,
+                      "duration": -0.03333,
+                      "delay": 0,
+                      "attachment": 1,
+                      "depthBias": -10
+                    },
+                    "nodeTransform": null,
+                    "nodeMovement": null,
+                    "nodeAudio": null,
+                    "emitter": { "type": 399 },
+                    "emitterShape": {
+                      "type": 400,
+                      "direction": 0
+                    },
+                    "directionSpread": { "type": 500 },
+                    "particleModifier": {
+                      "type": 131,
+                      "speed": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "scaleZ": 1,
+                      "color": [ 1, 1, 1, 1 ],
+                      "uniformScale": false
+                    },
+                    "particleAttributes": {
+                      "type": 129,
+                      "duration": -0.03333,
+                      "attachment": 1
+                    },
+                    "appearance": {
+                      "type": 10012,
+                      "texture": 26041,
+                      "blendMode": 0,
+                      "width": 1,
+                      "widthMultiplier": 1,
+                      "startFadeEndpoint": 90,
+                      "endFadeEndpoint": 10,
+                      "color1": [ 0.50196, 0.50196, 0.50196, 1 ],
+                      "color2": [ 1, 1, 1, 1 ],
+                      "color3": [ 1, 1, 1, 1 ],
+                      "alphaFadeThreshold": 0,
+                      "frameIndex": 0,
+                      "frameIndexOffset": 0,
+                      "textureFraction": 0.01,
+                      "speedU": 0,
+                      "varianceV": 0,
+                      "rgbMultiplier": 1,
+                      "alphaMultiplier": 0.5,
+                      "distortionIntensity": 0,
+                      "alphaThreshold": 0,
+                      "orientation": 1,
+                      "normalMap": 0,
+                      "segmentInterval": 0.033333,
+                      "segmentDuration": 0.3,
+                      "concurrentSegments": 9,
+                      "segmentSubdivision": 5,
+                      "fadeOutTime": 0.2,
+                      "columns": 1,
+                      "totalFrames": 1,
+                      "attachedUV": false,
+                      "dynamicOpacity": false,
+                      "unk_sdt_f1_16": 0,
+                      "varianceU": 1,
+                      "bloom": false,
+                      "bloomColor": [ 1, 1, 1, 1 ],
+                      "minFadeDistance": -1,
+                      "minDistance": -1,
+                      "maxFadeDistance": -1,
+                      "maxDistance": -1,
+                      "minDistanceThreshold": -1,
+                      "maxDistanceThreshold": -1,
+                      "unkDepthBlend1": 1,
+                      "unkDepthBlend2": 0,
+                      "premultiplyAlpha": false,
+                      "shadowDarkness": 0,
+                      "specular": 0,
+                      "glossiness": 0.5,
+                      "lighting": -1,
+                      "specularity": 0
+                    },
+                    "particleMovement": null,
+                    "emissionAudio": null,
+                    "slot12": { "type": 130 },
+                    "nodeForceMovement": null,
+                    "particleForceMovement": null
+                  }
+                ]
+              },
+              {
+                "type": 2200,
+                "stateConfigMap": [ 0 ],
+                "configs": [
+                  {
+                    "type": 1004,
+                    "nodeAttributes": {
+                      "type": 128,
+                      "duration": -0.03333,
+                      "delay": 0,
+                      "attachment": 1,
+                      "depthBias": -10
+                    },
+                    "nodeTransform": null,
+                    "nodeMovement": null,
+                    "nodeAudio": null,
+                    "emitter": { "type": 399 },
+                    "emitterShape": {
+                      "type": 400,
+                      "direction": 0
+                    },
+                    "directionSpread": { "type": 500 },
+                    "particleModifier": {
+                      "type": 131,
+                      "speed": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "scaleZ": 1,
+                      "color": [ 1, 1, 1, 1 ],
+                      "uniformScale": false
+                    },
+                    "particleAttributes": {
+                      "type": 129,
+                      "duration": -0.03333,
+                      "attachment": 1
+                    },
+                    "appearance": {
+                      "type": 10012,
+                      "texture": 26041,
+                      "blendMode": 0,
+                      "width": 1,
+                      "widthMultiplier": 1,
+                      "startFadeEndpoint": 90,
+                      "endFadeEndpoint": 10,
+                      "color1": [ 0.50196, 0.50196, 0.50196, 1 ],
+                      "color2": [ 1, 1, 1, 1 ],
+                      "color3": [ 1, 1, 1, 1 ],
+                      "alphaFadeThreshold": 0,
+                      "frameIndex": 0,
+                      "frameIndexOffset": 0,
+                      "textureFraction": 0.01,
+                      "speedU": 0,
+                      "varianceV": 0,
+                      "rgbMultiplier": 1,
+                      "alphaMultiplier": 0.5,
+                      "distortionIntensity": 0,
+                      "alphaThreshold": 0,
+                      "orientation": 1,
+                      "normalMap": 0,
+                      "segmentInterval": 0.033333,
+                      "segmentDuration": 0.3,
+                      "concurrentSegments": 9,
+                      "segmentSubdivision": 5,
+                      "fadeOutTime": 0.2,
+                      "columns": 1,
+                      "totalFrames": 1,
+                      "attachedUV": false,
+                      "dynamicOpacity": false,
+                      "unk_sdt_f1_16": 0,
+                      "varianceU": 1,
+                      "bloom": false,
+                      "bloomColor": [ 1, 1, 1, 1 ],
+                      "minFadeDistance": -1,
+                      "minDistance": -1,
+                      "maxFadeDistance": -1,
+                      "maxDistance": -1,
+                      "minDistanceThreshold": -1,
+                      "maxDistanceThreshold": -1,
+                      "unkDepthBlend1": 1,
+                      "unkDepthBlend2": 0,
+                      "premultiplyAlpha": false,
+                      "shadowDarkness": 0,
+                      "specular": 0,
+                      "glossiness": 0.5,
+                      "lighting": -1,
+                      "specularity": 0
+                    },
+                    "particleMovement": null,
+                    "emissionAudio": null,
+                    "slot12": { "type": 130 },
+                    "nodeForceMovement": null,
+                    "particleForceMovement": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": -5
+                },
+                "nodeTransform": null,
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": { "type": 399 },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": { "type": 500 },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": -0.03333,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 10012,
+                  "texture": 26001,
+                  "blendMode": 2,
+                  "width": 1,
+                  "widthMultiplier": 1,
+                  "startFadeEndpoint": 90,
+                  "endFadeEndpoint": 10,
+                  "color1": [ 0.12549, 0.12549, 0.12549, 1 ],
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 2.5 ] },
+                      { "position": 0.6, "value": [ 1, 1, 1, 1   ] }
+                    ]
+                  },
+                  "alphaFadeThreshold": 0,
+                  "frameIndex": 0,
+                  "frameIndexOffset": 0,
+                  "textureFraction": 0.25,
+                  "speedU": 0,
+                  "varianceV": 0,
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "distortionIntensity": 0.25,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "normalMap": 64002,
+                  "segmentInterval": 0.033333,
+                  "segmentDuration": 0.2,
+                  "concurrentSegments": 6,
+                  "segmentSubdivision": 5,
+                  "fadeOutTime": 0.2,
+                  "columns": 1,
+                  "totalFrames": 1,
+                  "attachedUV": false,
+                  "unk_ds3_f1_13": -2,
+                  "unk_ds3_f1_14": -2,
+                  "dynamicOpacity": false,
+                  "unk_sdt_f1_15": 0.2,
+                  "unk_sdt_f1_16": 0,
+                  "varianceU": 1,
+                  "bloom": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "shadowDarkness": 0,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -2,
+                  "specularity": 0
+                },
+                "particleMovement": null,
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+{
+  "id": 636005,
+  "states": [
+    "External(0) >= 1 then terminate"
+  ],
+  "root": {
+    "type": 2000,
+    "termination": { "type": 700 },
+    "unk10100": { "type": 10100 },
+    "unk10400": { "type": 10400 },
+    "unk10500": {
+      "type": 10500,
+      "rateOfTime": {
+        "function": "Linear",
+        "loop": false,
+        "keyframes": [
+          { "position": 0, "value": 2 },
+          { "position": 1, "value": 1 }
+        ]
+      },
+      "limitViewDistance": false,
+      "maxViewDistance": 0,
+      "initialSimulationTime": 0
+    },
+    "nodes": [
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": {
+              "type": 35,
+              "offset": [ 0, 0.5, 0 ],
+              "rotation": [ 0, 0, 0 ]
+            },
+            "nodeMovement": {
+              "type": 1,
+              "speedZ": 0,
+              "accelerationZ": 0,
+              "accelerationMultiplierZ": 1,
+              "accelerationY": 0,
+              "unkAlignWithMotion": 0
+            },
+            "nodeAudio": null,
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ],
+        "nodes": [
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": { "type": 399 },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": { "type": 500 },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": 1,
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": -0.03333,
+                  "attachment": 1
+                },
+                "appearance": {
+                  "type": 609,
+                  "diffuseColor": [ 0.713725, 0.619607, 1, 1 ],
+                  "specularColor": [ 0.713725, 0.619607, 1, 1 ],
+                  "radius": 5,
+                  "unk_ds3_p1_3": 1,
+                  "unk_ds3_p1_4": 1,
+                  "unk_ds3_p1_5": 1,
+                  "unk_ds3_p1_6": 1,
+                  "unk_ds3_p2_0": 1.25,
+                  "diffuseMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0, "value":  0   },
+                      { "position": 1, "value": 12.8 }
+                    ]
+                  },
+                  "specularMultiplier": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0, "value":  0   },
+                      { "position": 1, "value": 12.8 }
+                    ]
+                  },
+                  "unk_ds3_f1_0": 1,
+                  "jitterAndFlicker": true,
+                  "jitterAcceleration": 1,
+                  "unk_ds3_f2_3": 0.05,
+                  "jitterX": 0,
+                  "jitterY": 0,
+                  "jitterZ": 0,
+                  "flickerIntervalMin": 0.1875,
+                  "flickerIntervalMax": 0.375,
+                  "flickerBrightness": 0.5,
+                  "shadows": false,
+                  "separateSpecular": false,
+                  "fadeOutTime": 0.2,
+                  "shadowDarkness": 0.8,
+                  "maxViewDistance": 0,
+                  "volumeDensity": 0.5,
+                  "phaseFunction": false,
+                  "asymmetryParam": 0.2,
+                  "adaptationExponent": 1
+                },
+                "particleMovement": null,
+                "emissionAudio": null,
+                "slot12": { "type": 130 },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -50
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, -0.25, 0 ],
+                  "rotation": [ -90, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.2,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": -1
+                },
+                "emitterShape": {
+                  "type": 401,
+                  "radius": 0.45,
+                  "distribution": -0.5,
+                  "direction": 0
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 1.6875,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1579867198,
+                        "max": 0.111111
+                      }
+                    ]
+                  },
+                  "scaleX": {
+                    "value": 0.421875,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 512231366,
+                        "max": 0.111111
+                      }
+                    ]
+                  },
+                  "scaleY": {
+                    "value": 1.6875,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 970351704,
+                        "max": 0.111111
+                      }
+                    ]
+                  },
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.6,
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 607,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "sizeX": 1,
+                  "sizeY": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1,   "t1": 1.301881, "t2": 0 },
+                      { "position": 0.6, "value": 2.5, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "sizeZ": 1,
+                  "color": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.2, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.4, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.6, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "intensity": 5,
+                  "unk_ds3_p1_9": 1,
+                  "stirSpeed": 57.29577951308232,
+                  "radius": 1,
+                  "normalMapOffsetU": {
+                    "value": 1,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -123934182,
+                        "min": -1,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "normalMapOffsetV": {
+                    "value": 1,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -262205960,
+                        "min": -1,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "normalMapSpeedU": 0,
+                  "normalMapSpeedV": 0.25,
+                  "rgbMultiplier": 1,
+                  "alphaMultiplier": 1,
+                  "alphaThreshold": 0,
+                  "normalMapScaleU": 0.5,
+                  "normalMapScaleV": 0.5,
+                  "mode": 1,
+                  "shape": 0,
+                  "orientation": 11,
+                  "texture": 0,
+                  "normalMap": 64002,
+                  "mask": 0,
+                  "scaleVariationX": 1,
+                  "scaleVariationY": 1,
+                  "scaleVariationZ": 1,
+                  "uniformScale": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unk_ds3_f2_20": 0,
+                  "unk_ds3_f2_21": 1,
+                  "unkDepthBlend1": 0.25,
+                  "unkDepthBlend2": 0,
+                  "unk_sdt_f2_30": 1,
+                  "unk_sdt_f2_34": 0.5,
+                  "unk_sdt_f2_35": -2,
+                  "unk_sdt_f2_38": 100
+                },
+                "particleMovement": {
+                  "type": 55,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ],
+            "nodes": [
+              {
+                "type": 2200,
+                "stateConfigMap": [ 0 ],
+                "configs": [
+                  {
+                    "type": 1004,
+                    "nodeAttributes": {
+                      "type": 128,
+                      "duration": -0.03333,
+                      "delay": 0,
+                      "attachment": 1,
+                      "depthBias": -20
+                    },
+                    "nodeTransform": {
+                      "type": 35,
+                      "offset": [ 0, 0, 0 ],
+                      "rotation": [ 0, 0, 0 ]
+                    },
+                    "nodeMovement": {
+                      "type": 1,
+                      "speedZ": 0,
+                      "accelerationZ": 0,
+                      "accelerationMultiplierZ": 1,
+                      "accelerationY": 0,
+                      "unkAlignWithMotion": 0
+                    },
+                    "nodeAudio": null,
+                    "emitter": {
+                      "type": 300,
+                      "interval": 0.033333,
+                      "perEmission": 1,
+                      "totalEmissions": -1,
+                      "maxConcurrent": -1
+                    },
+                    "emitterShape": {
+                      "type": 401,
+                      "radius": 0.45,
+                      "distribution": -0.5,
+                      "direction": 1
+                    },
+                    "directionSpread": {
+                      "type": 501,
+                      "angle": 0,
+                      "distribution": 0
+                    },
+                    "particleModifier": {
+                      "type": 131,
+                      "speed": {
+                        "value": 1.6875,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": -1363701246,
+                            "max": 0.111111
+                          }
+                        ]
+                      },
+                      "scaleX": {
+                        "value": 0.421875,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": 617207592,
+                            "max": 0.111111
+                          }
+                        ]
+                      },
+                      "scaleY": {
+                        "value": 1.125,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": 991569297,
+                            "max": 0.111111
+                          }
+                        ]
+                      },
+                      "scaleZ": 1,
+                      "color": [ 0.890196, 0.870588, 1, 1 ],
+                      "uniformScale": false
+                    },
+                    "particleAttributes": {
+                      "type": 129,
+                      "duration": 0.6,
+                      "attachment": 0
+                    },
+                    "appearance": {
+                      "type": 604,
+                      "blendMode": 2,
+                      "offsetX": 0,
+                      "offsetY": 0,
+                      "offsetZ": 0,
+                      "width": 1,
+                      "height": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": 1   },
+                          { "position": 0.6, "value": 2.5 }
+                        ]
+                      },
+                      "rotationX": 0,
+                      "rotationY": 0,
+                      "rotationZ": 0,
+                      "angularSpeedX": 0,
+                      "angularSpeedMultiplierX": 1,
+                      "angularSpeedY": 0,
+                      "angularSpeedMultiplierY": 1,
+                      "angularSpeedZ": 0,
+                      "angularSpeedMultiplierZ": 1,
+                      "color1": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": [ 0.693137, 0.655392, 0.875, 0 ] },
+                          { "position": 0.2, "value": [ 0.656536, 0.583333, 0.875, 1 ] },
+                          { "position": 0.4, "value": [ 0.619934, 0.511274, 0.875, 1 ] },
+                          { "position": 0.6, "value": [ 0.583333, 0.439215, 0.875, 0 ] }
+                        ]
+                      },
+                      "color2": {
+                        "value": [ 1.141176, 1.141176, 1.141176, 1 ],
+                        "modifiers": [
+                          {
+                            "type": "RandomRange",
+                            "seed": [ 857923527, 555187235, 1259184062, -1580134941 ],
+                            "min": [ -0.28627, -0.28627, -0.28627, 0 ],
+                            "max": [ 0, 0, 0, 0 ]
+                          }
+                        ]
+                      },
+                      "color3": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": [ 1.5, 1.5, 1.5, 1   ] },
+                          { "position": 0.6, "value": [ 1,   1,   1,   0.5 ] }
+                        ]
+                      },
+                      "layer1Color": [ 1, 1, 1, 1 ],
+                      "layer2Color": [ 1, 1, 1, 1 ],
+                      "layer3Color": [ 1, 1, 1, 1 ],
+                      "alphaFadeThreshold": 0,
+                      "frameIndex": 0,
+                      "frameIndexOffset": 0,
+                      "layer1SpeedU": 0,
+                      "layer1SpeedV": 0,
+                      "layer1OffsetU": 0,
+                      "layer1OffsetV": 0,
+                      "layer1ScaleU": 1,
+                      "layer1ScaleV": 1,
+                      "layer2SpeedU": 0,
+                      "layer2SpeedV": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": 0.5 },
+                          { "position": 0.6, "value": 0   }
+                        ]
+                      },
+                      "layer2OffsetU": {
+                        "value": 0.5,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": -2077744391,
+                            "max": 1
+                          }
+                        ]
+                      },
+                      "layer2OffsetV": {
+                        "value": 0.5,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": 507813947,
+                            "max": 1
+                          }
+                        ]
+                      },
+                      "layer2ScaleU": 1,
+                      "layer2ScaleV": 0.5,
+                      "layer3SpeedU": 0,
+                      "layer3SpeedV": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": 0.25 },
+                          { "position": 0.6, "value": 0    }
+                        ]
+                      },
+                      "layer3OffsetU": {
+                        "value": 0.5,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": 965950498,
+                            "max": 1
+                          }
+                        ]
+                      },
+                      "layer3OffsetV": {
+                        "value": 0.5,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": 268734694,
+                            "max": 1
+                          }
+                        ]
+                      },
+                      "layer3ScaleU": 1,
+                      "layer3ScaleV": 0.5,
+                      "rgbMultiplier": 2.5,
+                      "alphaMultiplier": 1,
+                      "alphaThreshold": 0,
+                      "orientation": 4,
+                      "layer1": 10011,
+                      "layer2": 34020,
+                      "layer3": 34020,
+                      "uniformScale": false,
+                      "scaleBeforeRotation": false,
+                      "columns": 1,
+                      "totalFrames": 1,
+                      "interpolateFrames": true,
+                      "depthBlend": true,
+                      "octagonal": true,
+                      "bloom": true,
+                      "bloomColor": [ 0.75, 0.5, 1, 0.1 ],
+                      "unk_ds3_f2_10": 1,
+                      "minFadeDistance": 3,
+                      "minDistance": 1.5,
+                      "maxFadeDistance": -1,
+                      "maxDistance": -1,
+                      "minDistanceThreshold": 1,
+                      "maxDistanceThreshold": -1,
+                      "unkDepthBlend1": 1,
+                      "unkDepthBlend2": 0,
+                      "premultiplyAlpha": false,
+                      "unk_ds3_f2_29": 10,
+                      "shadowDarkness": 0,
+                      "specular": 0,
+                      "glossiness": 0.5,
+                      "lighting": -1,
+                      "unk_sdt_f2_39": 0
+                    },
+                    "particleMovement": {
+                      "type": 55,
+                      "gravity": 0,
+                      "acceleration": 0,
+                      "accelerationMultiplier": 1
+                    },
+                    "emissionAudio": null,
+                    "slot12": {
+                      "type": 130,
+                      "unk_ds3_f1_0": 0
+                    },
+                    "nodeForceMovement": null,
+                    "particleForceMovement": null
+                  }
+                ]
+              },
+              {
+                "type": 2200,
+                "stateConfigMap": [ 0 ],
+                "configs": [
+                  {
+                    "type": 1004,
+                    "nodeAttributes": {
+                      "type": 128,
+                      "duration": -0.03333,
+                      "delay": 0,
+                      "attachment": 1,
+                      "depthBias": -50
+                    },
+                    "nodeTransform": {
+                      "type": 35,
+                      "offset": [ 0, 0, 0 ],
+                      "rotation": [ 0, 0, 0 ]
+                    },
+                    "nodeMovement": null,
+                    "nodeAudio": null,
+                    "emitter": {
+                      "type": 300,
+                      "interval": 0.066666,
+                      "perEmission": 1,
+                      "totalEmissions": -1,
+                      "maxConcurrent": -1
+                    },
+                    "emitterShape": {
+                      "type": 401,
+                      "radius": 0.45,
+                      "distribution": -0.5,
+                      "direction": 1
+                    },
+                    "directionSpread": {
+                      "type": 501,
+                      "angle": 0,
+                      "distribution": 0
+                    },
+                    "particleModifier": {
+                      "type": 131,
+                      "speed": {
+                        "value": 8.75,
+                        "modifiers": [
+                          {
+                            "type": "RandomFraction",
+                            "seed": -704755723,
+                            "max": 0.428571
+                          }
+                        ]
+                      },
+                      "scaleX": 1.125,
+                      "scaleY": 1,
+                      "scaleZ": 1,
+                      "color": [ 1, 1, 1, 1 ],
+                      "uniformScale": true
+                    },
+                    "particleAttributes": {
+                      "type": 129,
+                      "duration": 0.2,
+                      "attachment": 0
+                    },
+                    "appearance": {
+                      "type": 10012,
+                      "texture": 33025,
+                      "blendMode": 4,
+                      "width": 0.11875,
+                      "widthMultiplier": {
+                        "value": 0.421052,
+                        "modifiers": [
+                          {
+                            "type": "RandomRange",
+                            "seed": -293576695,
+                            "min": 0,
+                            "max": 1.157895
+                          }
+                        ]
+                      },
+                      "startFadeEndpoint": 0,
+                      "endFadeEndpoint": 75,
+                      "color1": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": [ 0.792156, 0.749019, 1, 1 ] },
+                          { "position": 0.2, "value": [ 0.666666, 0.50196,  1, 1 ] }
+                        ]
+                      },
+                      "color2": [ 1, 1, 1, 1 ],
+                      "color3": [ 1, 1, 1, 1 ],
+                      "alphaFadeThreshold": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,     "value": 255 },
+                          { "position": 0.067, "value": 192 },
+                          { "position": 0.2,   "value": 255 }
+                        ]
+                      },
+                      "frameIndex": {
+                        "value": 0,
+                        "modifiers": [
+                          {
+                            "type": "RandomRange",
+                            "seed": 1314005975,
+                            "min": 0,
+                            "max": 15
+                          }
+                        ]
+                      },
+                      "frameIndexOffset": {
+                        "function": "Linear",
+                        "loop": true,
+                        "keyframes": [
+                          { "position": 0,   "value": 0 },
+                          { "position": 0.2, "value": 4 }
+                        ]
+                      },
+                      "textureFraction": 1,
+                      "speedU": {
+                        "function": "Linear",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": -0.5 },
+                          { "position": 0.2, "value":  0   }
+                        ]
+                      },
+                      "varianceV": 0,
+                      "rgbMultiplier": 25,
+                      "alphaMultiplier": 12.5,
+                      "distortionIntensity": 0,
+                      "alphaThreshold": 0,
+                      "orientation": 0,
+                      "normalMap": 0,
+                      "segmentInterval": 0,
+                      "segmentDuration": 0.6,
+                      "concurrentSegments": 18,
+                      "segmentSubdivision": 0,
+                      "fadeOutTime": 0.2,
+                      "columns": 1,
+                      "totalFrames": 16,
+                      "attachedUV": false,
+                      "unk_ds3_f1_13": -2,
+                      "unk_ds3_f1_14": -2,
+                      "dynamicOpacity": true,
+                      "unk_sdt_f1_15": 0.5,
+                      "unk_sdt_f1_16": 0,
+                      "varianceU": 0,
+                      "bloom": true,
+                      "bloomColor": [ 0.75, 0.75, 1, 0.25 ],
+                      "minFadeDistance": 1,
+                      "minDistance": 0.5,
+                      "maxFadeDistance": -1,
+                      "maxDistance": -1,
+                      "minDistanceThreshold": -1,
+                      "maxDistanceThreshold": -1,
+                      "unkDepthBlend1": 1,
+                      "unkDepthBlend2": 0,
+                      "premultiplyAlpha": false,
+                      "unk_ds3_f2_29": 3.75,
+                      "shadowDarkness": 0,
+                      "unk_sdt_f2_32": true,
+                      "specular": 0,
+                      "glossiness": 0.5,
+                      "lighting": -1,
+                      "specularity": 0
+                    },
+                    "particleMovement": {
+                      "type": 84,
+                      "gravity": 0,
+                      "acceleration": 0,
+                      "accelerationMultiplier": 1,
+                      "maxTurnAngle": 5.625,
+                      "turnInterval": 0.12
+                    },
+                    "emissionAudio": null,
+                    "slot12": { "type": 130 },
+                    "nodeForceMovement": null,
+                    "particleForceMovement": null
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+{
+  "id": 645016,
+  "states": [
+    "External(0) >= 1 then terminate"
+  ],
+  "root": {
+    "type": 2000,
+    "termination": { "type": 700 },
+    "unk10100": { "type": 10100 },
+    "unk10400": { "type": 10400 },
+    "unk10500": {
+      "type": 10500,
+      "rateOfTime": 0.5,
+      "limitViewDistance": false,
+      "maxViewDistance": 0,
+      "initialSimulationTime": 0
+    },
+    "nodes": [
+      {
+        "type": 2200,
+        "stateConfigMap": [ 0 ],
+        "configs": [
+          {
+            "type": 1004,
+            "nodeAttributes": {
+              "type": 128,
+              "duration": -0.03333,
+              "delay": 0,
+              "attachment": 1,
+              "depthBias": 0
+            },
+            "nodeTransform": {
+              "type": 35,
+              "offset": [ 0, 0, 3.5 ],
+              "rotation": [ 0, 0, 0 ]
+            },
+            "nodeMovement": {
+              "type": 1,
+              "speedZ": 0,
+              "accelerationZ": 0,
+              "accelerationMultiplierZ": 1,
+              "accelerationY": 0,
+              "unkAlignWithMotion": 0
+            },
+            "nodeAudio": null,
+            "emitter": { "type": 399 },
+            "emitterShape": {
+              "type": 400,
+              "direction": 0
+            },
+            "directionSpread": { "type": 500 },
+            "particleModifier": {
+              "type": 131,
+              "speed": 0,
+              "scaleX": 1,
+              "scaleY": 1,
+              "scaleZ": 1,
+              "color": [ 1, 1, 1, 1 ],
+              "uniformScale": false
+            },
+            "particleAttributes": {
+              "type": 129,
+              "duration": -0.03333,
+              "attachment": 1
+            },
+            "appearance": null,
+            "particleMovement": null,
+            "emissionAudio": null,
+            "slot12": { "type": 130 },
+            "nodeForceMovement": null,
+            "particleForceMovement": null
+          }
+        ],
+        "nodes": [
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -200
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.033333,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": 9
+                },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 1
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": {
+                    "value": 11.25,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1687718512,
+                        "max": 0.111111
+                      }
+                    ]
+                  },
+                  "scaleY": {
+                    "value": 6.25,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1188462376,
+                        "max": 0.2
+                      }
+                    ]
+                  },
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": false
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.3,
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 604,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "width": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                      { "position": 0.3, "value": 5, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "height": 1,
+                  "rotationX": 0,
+                  "rotationY": 0,
+                  "rotationZ": {
+                    "value": 360,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 898131088,
+                        "min": -360,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "angularSpeedX": 0,
+                  "angularSpeedMultiplierX": 1,
+                  "angularSpeedY": 0,
+                  "angularSpeedMultiplierY": 1,
+                  "angularSpeedZ": 0,
+                  "angularSpeedMultiplierZ": 1,
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.1, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.3, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.3, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "layer1Color": [ 1, 1, 1, 1 ],
+                  "layer2Color": [ 1, 1, 1, 0.878431 ],
+                  "layer3Color": [ 1, 1, 1, 1 ],
+                  "alphaFadeThreshold": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value":  0 },
+                      { "position": 0.1, "value":  0 },
+                      { "position": 0.3, "value": 32 }
+                    ]
+                  },
+                  "frameIndex": {
+                    "value": 0,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 1704274470,
+                        "min": 0,
+                        "max": 4
+                      }
+                    ]
+                  },
+                  "frameIndexOffset": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0 },
+                      { "position": 0.3, "value": 3 }
+                    ]
+                  },
+                  "layer1SpeedU": 0,
+                  "layer1SpeedV": 0,
+                  "layer1OffsetU": 0,
+                  "layer1OffsetV": 0,
+                  "layer1ScaleU": 1,
+                  "layer1ScaleV": 1,
+                  "layer2SpeedU": 0,
+                  "layer2SpeedV": 0.25,
+                  "layer2OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -973203215,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 807694294,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2ScaleU": 2,
+                  "layer2ScaleV": 2,
+                  "layer3SpeedU": 0,
+                  "layer3SpeedV": 0,
+                  "layer3OffsetU": 0,
+                  "layer3OffsetV": 0,
+                  "layer3ScaleU": 1,
+                  "layer3ScaleV": 1,
+                  "rgbMultiplier": 3,
+                  "alphaMultiplier": 1.5,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "layer1": 31281,
+                  "layer2": 34020,
+                  "layer3": 0,
+                  "uniformScale": true,
+                  "scaleBeforeRotation": true,
+                  "columns": 4,
+                  "totalFrames": 8,
+                  "interpolateFrames": true,
+                  "depthBlend": true,
+                  "octagonal": true,
+                  "bloom": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "unk_ds3_f2_10": 1,
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "unk_ds3_f2_29": 5,
+                  "shadowDarkness": 0.5,
+                  "unk_sdt_f2_32": true,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -2,
+                  "unk_sdt_f2_37": 1,
+                  "unk_sdt_f2_39": 0
+                },
+                "particleMovement": {
+                  "type": 105,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1,
+                  "maxTurnAngle": 0,
+                  "followFactor": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                      { "position": 0.3, "value": 0, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "turnInterval": 0,
+                  "followRotation": false
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2202,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1005,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": 0
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.166666,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": 2
+                },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 0
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "nodeSelector": { "type": 200 },
+                "emissionAudio": null,
+                "nodeForceMovement": null
+              }
+            ],
+            "nodes": [
+              {
+                "type": 2200,
+                "stateConfigMap": [ 0 ],
+                "configs": [
+                  {
+                    "type": 1004,
+                    "nodeAttributes": {
+                      "type": 128,
+                      "duration": 0.2,
+                      "delay": 0,
+                      "unk_ds3_f1_1": 0,
+                      "attachment": 0,
+                      "depthBias": -250
+                    },
+                    "nodeTransform": {
+                      "type": 35,
+                      "offset": [ 0, 0, 0 ],
+                      "rotation": [ 0, 0, 0 ]
+                    },
+                    "nodeMovement": {
+                      "type": 106,
+                      "speedZ": 0,
+                      "accelerationZ": 0,
+                      "accelerationMultiplierZ": 1,
+                      "accelerationY": 0,
+                      "maxTurnAngle": 0,
+                      "followFactor": {
+                        "function": "Hermite",
+                        "loop": false,
+                        "keyframes": [
+                          { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                          { "position": 0.2, "value": 0, "t1": 0,        "t2": 0 }
+                        ]
+                      },
+                      "unkAlignWithMotion": 0,
+                      "turnInterval": 0,
+                      "followRotation": false
+                    },
+                    "nodeAudio": null,
+                    "emitter": { "type": 399 },
+                    "emitterShape": {
+                      "type": 400,
+                      "direction": 0
+                    },
+                    "directionSpread": { "type": 500 },
+                    "particleModifier": {
+                      "type": 131,
+                      "speed": 0,
+                      "scaleX": 1,
+                      "scaleY": 1,
+                      "scaleZ": 1,
+                      "color": [ 1, 1, 1, 1 ],
+                      "uniformScale": false
+                    },
+                    "particleAttributes": {
+                      "type": 129,
+                      "duration": 0.2,
+                      "attachment": 1
+                    },
+                    "appearance": {
+                      "type": 608,
+                      "blendMode": 2,
+                      "mask": 10011,
+                      "offsetX": 0,
+                      "offsetY": 0,
+                      "offsetZ": 0,
+                      "width": 40,
+                      "height": 1,
+                      "color": {
+                        "function": "Hermite",
+                        "loop": false,
+                        "keyframes": [
+                          {
+                            "position": 0,
+                            "value": [ 1, 1, 1, 0 ],
+                            "t1": [ 0.785398, 0.785398, 0.785398, 0.785398 ],
+                            "t2": [ 0.785398, 0.785398, 0.785398, 0.785398 ]
+                          },
+                          {
+                            "position": 0.067,
+                            "value": [ 1, 1, 1, 1 ],
+                            "t1": [ 0.785398, 0.785398, 0.785398, 0.785398 ],
+                            "t2": [ 0, 0, 0, 0 ]
+                          },
+                          { "position": 0.2, "value": [ 1, 1, 1, 0 ], "t1": [ 0, 0, 0, 0 ], "t2": [ 0, 0, 0, 0 ] }
+                        ]
+                      },
+                      "blurRadius": 0.1,
+                      "rgbMultiplier": 1,
+                      "alphaMultiplier": 1,
+                      "alphaThreshold": 0,
+                      "uniformScale": true,
+                      "iterations": 1,
+                      "bloomColor": [ 1, 1, 1, 1 ],
+                      "minFadeDistance": 2.5,
+                      "minDistance": 1.25,
+                      "maxFadeDistance": -1,
+                      "maxDistance": -1,
+                      "minDistanceThreshold": 1.25,
+                      "maxDistanceThreshold": -1,
+                      "unk_ds3_f2_22": 2.5,
+                      "unkDepthBlend1": 1,
+                      "unkDepthBlend2": 0,
+                      "unk_sdt_f2_30": 250
+                    },
+                    "particleMovement": null,
+                    "emissionAudio": null,
+                    "slot12": { "type": 130 },
+                    "nodeForceMovement": null,
+                    "particleForceMovement": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "attachment": 1,
+                  "depthBias": -5
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": {
+                  "type": 1,
+                  "speedZ": 0,
+                  "accelerationZ": 0,
+                  "accelerationMultiplierZ": 1,
+                  "accelerationY": 0,
+                  "unkAlignWithMotion": 0
+                },
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.033333,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": 12
+                },
+                "emitterShape": {
+                  "type": 403,
+                  "radius": 0.25,
+                  "emitInside": false
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": {
+                    "value": 2.96875,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 1191059878,
+                        "max": 0.157894
+                      }
+                    ]
+                  },
+                  "scaleX": {
+                    "value": 1.125,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -1963526331,
+                        "max": 0.111111
+                      }
+                    ]
+                  },
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 0.50196 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.4,
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 603,
+                  "texture": 31421,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "width": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1,    "t1": 0.785398, "t2": 0 },
+                      { "position": 0.4, "value": 3.75, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "height": 1,
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0.50196 ] },
+                      { "position": 0.1, "value": [ 1, 1, 1, 1       ] },
+                      { "position": 0.2, "value": [ 1, 1, 1, 1       ] },
+                      { "position": 0.4, "value": [ 1, 1, 1, 0       ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 1   ] },
+                      { "position": 0.4, "value": [ 1, 1, 1, 0.5 ] }
+                    ]
+                  },
+                  "alphaFadeThreshold": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value":  0 },
+                      { "position": 0.1, "value":  0 },
+                      { "position": 0.4, "value": 32 }
+                    ]
+                  },
+                  "rotationX": 0,
+                  "rotationY": 0,
+                  "rotationZ": {
+                    "value": 360,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -1074114694,
+                        "min": -360,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "angularSpeedX": 0,
+                  "angularSpeedMultiplierX": 1,
+                  "angularSpeedY": 0,
+                  "angularSpeedMultiplierY": 1,
+                  "angularSpeedZ": 0,
+                  "angularSpeedMultiplierZ": 1,
+                  "depthOffset": 0,
+                  "frameIndex": {
+                    "value": 0,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": -1397498484,
+                        "min": 0,
+                        "max": 12
+                      }
+                    ]
+                  },
+                  "frameIndexOffset": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0 },
+                      { "position": 0.4, "value": 3 }
+                    ]
+                  },
+                  "rgbMultiplier": 7.5,
+                  "alphaMultiplier": 3.75,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "normalMap": 0,
+                  "scaleVariationX": 1,
+                  "scaleVariationY": 1,
+                  "uniformScale": true,
+                  "scaleBeforeRotation": false,
+                  "columns": 4,
+                  "totalFrames": 16,
+                  "interpolateFrames": true,
+                  "unk_ds3_f1_13": 1,
+                  "depthBlend": true,
+                  "octagonal": true,
+                  "unk_sdt_f1_17": 1,
+                  "bloom": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "minFadeDistance": 3.75,
+                  "minDistance": 1.875,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": 1.875,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 0.25,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "unk_ds3_f2_29": 3.75,
+                  "shadowDarkness": 0.75,
+                  "unkHideIndoors": 0,
+                  "unk_sdt_f2_32": true,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -2,
+                  "specularity": 1
+                },
+                "particleMovement": {
+                  "type": 105,
+                  "gravity": 2.5,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1,
+                  "maxTurnAngle": 0,
+                  "followFactor": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                      { "position": 0.4, "value": 0, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "turnInterval": 0,
+                  "followRotation": false
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          },
+          {
+            "type": 2200,
+            "stateConfigMap": [ 0 ],
+            "configs": [
+              {
+                "type": 1004,
+                "nodeAttributes": {
+                  "type": 128,
+                  "duration": -0.03333,
+                  "delay": 0,
+                  "unk_ds3_f1_1": 0,
+                  "attachment": 1,
+                  "depthBias": -200
+                },
+                "nodeTransform": {
+                  "type": 35,
+                  "offset": [ 0, 0, 0 ],
+                  "rotation": [ 0, 0, 0 ]
+                },
+                "nodeMovement": null,
+                "nodeAudio": null,
+                "emitter": {
+                  "type": 300,
+                  "interval": 0.066666,
+                  "perEmission": 1,
+                  "totalEmissions": -1,
+                  "maxConcurrent": 9
+                },
+                "emitterShape": {
+                  "type": 400,
+                  "direction": 1
+                },
+                "directionSpread": {
+                  "type": 501,
+                  "angle": 0,
+                  "distribution": 0
+                },
+                "particleModifier": {
+                  "type": 131,
+                  "speed": 0,
+                  "scaleX": {
+                    "value": 11.25,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 469183149,
+                        "max": 0.111111
+                      }
+                    ]
+                  },
+                  "scaleY": 1,
+                  "scaleZ": 1,
+                  "color": [ 1, 1, 1, 1 ],
+                  "uniformScale": true
+                },
+                "particleAttributes": {
+                  "type": 129,
+                  "duration": 0.3,
+                  "attachment": 0
+                },
+                "appearance": {
+                  "type": 604,
+                  "blendMode": 2,
+                  "offsetX": 0,
+                  "offsetY": 0,
+                  "offsetZ": 0,
+                  "width": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0.5, "t1": 0.785398, "t2": 0 },
+                      { "position": 0.3, "value": 2.5, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "height": 1,
+                  "rotationX": 0,
+                  "rotationY": 0,
+                  "rotationZ": {
+                    "value": 360,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 646363721,
+                        "min": -360,
+                        "max": 0
+                      }
+                    ]
+                  },
+                  "angularSpeedX": 0,
+                  "angularSpeedMultiplierX": 1,
+                  "angularSpeedY": 0,
+                  "angularSpeedMultiplierY": 1,
+                  "angularSpeedZ": 0,
+                  "angularSpeedMultiplierZ": 1,
+                  "color1": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 0 ] },
+                      { "position": 0.1, "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.3, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "color2": [ 1, 1, 1, 1 ],
+                  "color3": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": [ 1, 1, 1, 1 ] },
+                      { "position": 0.3, "value": [ 1, 1, 1, 0 ] }
+                    ]
+                  },
+                  "layer1Color": [ 1, 1, 1, 1 ],
+                  "layer2Color": [ 1, 1, 1, 0.878431 ],
+                  "layer3Color": [ 1, 1, 1, 1 ],
+                  "alphaFadeThreshold": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value":  0 },
+                      { "position": 0.1, "value":  0 },
+                      { "position": 0.3, "value": 32 }
+                    ]
+                  },
+                  "frameIndex": {
+                    "value": 8,
+                    "modifiers": [
+                      {
+                        "type": "RandomRange",
+                        "seed": 1265279100,
+                        "min": 0,
+                        "max": 8
+                      }
+                    ]
+                  },
+                  "frameIndexOffset": {
+                    "function": "Linear",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 0 },
+                      { "position": 0.3, "value": 8 }
+                    ]
+                  },
+                  "layer1SpeedU": 0,
+                  "layer1SpeedV": 0,
+                  "layer1OffsetU": 0,
+                  "layer1OffsetV": 0,
+                  "layer1ScaleU": 1,
+                  "layer1ScaleV": 1,
+                  "layer2SpeedU": 0,
+                  "layer2SpeedV": 0.25,
+                  "layer2OffsetU": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": 2030521120,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2OffsetV": {
+                    "value": 0.5,
+                    "modifiers": [
+                      {
+                        "type": "RandomFraction",
+                        "seed": -620256017,
+                        "max": 1
+                      }
+                    ]
+                  },
+                  "layer2ScaleU": 2,
+                  "layer2ScaleV": 2,
+                  "layer3SpeedU": 0,
+                  "layer3SpeedV": 0,
+                  "layer3OffsetU": 0,
+                  "layer3OffsetV": 0,
+                  "layer3ScaleU": 1,
+                  "layer3ScaleV": 1,
+                  "rgbMultiplier": 3,
+                  "alphaMultiplier": 1.5,
+                  "alphaThreshold": 0,
+                  "orientation": 1,
+                  "layer1": 31241,
+                  "layer2": 34020,
+                  "layer3": 0,
+                  "uniformScale": true,
+                  "scaleBeforeRotation": false,
+                  "columns": 8,
+                  "totalFrames": 64,
+                  "interpolateFrames": true,
+                  "depthBlend": true,
+                  "octagonal": true,
+                  "bloom": false,
+                  "bloomColor": [ 1, 1, 1, 1 ],
+                  "unk_ds3_f2_10": 1,
+                  "minFadeDistance": -1,
+                  "minDistance": -1,
+                  "maxFadeDistance": -1,
+                  "maxDistance": -1,
+                  "minDistanceThreshold": -1,
+                  "maxDistanceThreshold": -1,
+                  "unkDepthBlend1": 1,
+                  "unkDepthBlend2": 0,
+                  "premultiplyAlpha": false,
+                  "unk_ds3_f2_29": 5,
+                  "shadowDarkness": 0.5,
+                  "unk_sdt_f2_32": true,
+                  "specular": 0,
+                  "glossiness": 0.5,
+                  "lighting": -2,
+                  "unk_sdt_f2_37": 1,
+                  "unk_sdt_f2_39": 0
+                },
+                "particleMovement": {
+                  "type": 105,
+                  "gravity": 0,
+                  "acceleration": 0,
+                  "accelerationMultiplier": 1,
+                  "maxTurnAngle": 0,
+                  "followFactor": {
+                    "function": "Hermite",
+                    "loop": false,
+                    "keyframes": [
+                      { "position": 0,   "value": 1, "t1": 0.785398, "t2": 0 },
+                      { "position": 0.3, "value": 0, "t1": 0,        "t2": 0 }
+                    ]
+                  },
+                  "turnInterval": 0,
+                  "followRotation": false
+                },
+                "emissionAudio": null,
+                "slot12": {
+                  "type": 130,
+                  "unk_ds3_f1_0": 0
+                },
+                "nodeForceMovement": null,
+                "particleForceMovement": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+
